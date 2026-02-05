@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis Mundial: PIB vs Esperanza de Vida</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            width: 100%;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        p.subtitle {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            margin-top: 0.5rem;
+        }
+
+        main {
+            max_width: 800px;
+            width: 90%;
+            margin: 2rem auto;
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            border-left: 5px solid #3498db;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            background-color: #fafafa;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+
+        .card p {
+            color: #666;
+            margin-bottom: 0;
+        }
+
+        .card.stat {
+            border-left-color: #e74c3c;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 2rem;
+            color: #888;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Análisis Económico Mundial</h1>
+        <p class="subtitle">Relación entre Riqueza y Salud (2022)</p>
+    </header>
+
+    <main>
+        <a href="mapa_interactivo_pib.html" class="card">
+            <h2>🌍 Mapa de Riqueza (PIB per Cápita)</h2>
+            <p>Visualización global del Producto Interno Bruto por persona ajustado por poder adquisitivo.</p>
+        </a>
+
+        <a href="mapa_interactivo_esperanza_vida.html" class="card">
+            <h2>❤️ Mapa de Salud (Esperanza de Vida)</h2>
+            <p>Distribución geográfica de la longevidad promedio al nacer en cada país.</p>
+        </a>
+
+        <a href="grafico_dispersion_interactivo.html" class="card stat">
+            <h2>📈 Análisis de Correlación</h2>
+            <p>Gráfico de dispersión (Scatter Plot) mostrando la fuerte relación positiva entre ambas variables (Curva
+                de Preston).</p>
+        </a>
+    </main>
+
+    <footer>
+        <p>Trabajo de Análisis Cuantitativo Avanzado - Unidad 3</p>
+        <p>Generado con Python (Pandas + Plotly)</p>
+    </footer>
+
+</body>
+
+</html>
